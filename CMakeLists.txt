@@ -71,5 +71,8 @@ if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
     add_compile_options(-Wno-maybe-uninitialized)
 endif()
 
+# Driver do display OLED (SSD1306)
+add_subdirectory(ssd1306_lib)
+
 # Hardware-specific examples in subdirectories:
 add_subdirectory(main)
