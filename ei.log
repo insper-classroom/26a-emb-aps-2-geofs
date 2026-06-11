@@ -1,0 +1,1360 @@
+PICO_SDK_PATH is C:/Users/marce/.pico-sdk/sdk/2.2.0
+Target board (PICO_BOARD) is 'pico2'.
+Using board configuration from C:/Users/marce/.pico-sdk/sdk/2.2.0/src/boards/include/boards/pico2.h
+Auto-converting non-specific PICO_PLATFORM='rp2350' to 'rp2350-arm-s'
+Defaulting platform (PICO_PLATFORM) to 'rp2350-arm-s' based on PICO_BOARD setting.
+-- Defaulting build type to 'Release' since not specified.
+Defaulting compiler (PICO_COMPILER) to 'pico_arm_cortex_m33_gcc' since not specified.
+Configuring toolchain based on PICO_COMPILER 'pico_arm_cortex_m33_gcc'
+Defaulting PICO_GCC_TRIPLE to 'arm-none-eabi'
+-- The C compiler identification is GNU 14.2.1
+-- The CXX compiler identification is GNU 14.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/marce/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/marce/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/marce/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+Build type is Release
+Using picotool from C:/Users/marce/.pico-sdk/picotool/2.2.0/picotool/picotool.exe
+-- Found Python3: C:/Python313/python.exe (found version "3.13.2") found components: Interpreter
+TinyUSB available at C:/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/hw/bsp/rp2040; enabling build support for USB.
+BTstack available at C:/Users/marce/.pico-sdk/sdk/2.2.0/lib/btstack
+cyw43-driver available at C:/Users/marce/.pico-sdk/sdk/2.2.0/lib/cyw43-driver
+mbedtls available at C:/Users/marce/.pico-sdk/sdk/2.2.0/lib/mbedtls
+lwIP available at C:/Users/marce/.pico-sdk/sdk/2.2.0/lib/lwip
+-- FREERTOS_KERNEL_RP2040_RELATIVE_PATH = portable/ThirdParty/GCC/RP2350_ARM_NTZ
+-- Configuring done (8.0s)
+-- Generating done (1.4s)
+-- Build files have been written to: C:/insper/compem/26a-emb-aps-2-geofs/build-ei
+[1/1086] Building ASM object pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/compile_time_choice.S.obj
+[2/1086] Linking ASM executable pico-sdk\src\rp2350\boot_stage2\bs2_default.elf
+[3/1086] Generating bs2_default.bin
+[4/1086] Generating bs2_default_padded_checksummed.S
+[5/1086] Building ASM object pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.obj
+[6/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.obj
+[7/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+[8/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.obj
+[9/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.obj
+[10/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.obj
+[11/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.obj
+[12/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+[13/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.obj
+[14/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.obj
+[15/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.obj
+[16/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.obj
+[17/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.obj
+[18/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.obj
+[19/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.obj
+[20/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.obj
+[21/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.obj
+[22/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.obj
+[23/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.obj
+[24/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.obj
+[25/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.obj
+[26/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.obj
+[27/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.obj
+[28/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
+[29/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
+[30/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/ssd1306.c.obj
+[31/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
+[32/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.obj
+[33/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+[34/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.obj
+[35/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.obj
+[36/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.obj
+[37/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.obj
+[38/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.obj
+[39/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+[40/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
+[41/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
+[42/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.obj
+[43/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
+[44/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.obj
+[45/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.obj
+[46/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+[47/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.obj
+[48/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.obj
+[49/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
+[50/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.obj
+[51/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+[52/1086] Building ASM object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.obj
+[53/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.obj
+[54/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+[55/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/classifier/ei_run_classifier_c.cpp.obj
+[56/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/dsp/dct/fast-dct-fft.cpp.obj
+[57/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.obj
+[58/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj
+[59/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+[60/1086] Building CXX object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
+[61/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+[62/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.obj
+[63/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ambiq/debug_log.cpp.obj
+[64/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ambiq/ei_classifier_porting.cpp.obj
+[65/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/android/ei_classifier_porting.cpp.obj
+[66/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/arduino/debug_log.cpp.obj
+[67/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.obj
+[68/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.obj
+[69/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/brickml/ei_classifier_porting.cpp.obj
+[70/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ceva-npn/debug_log.cpp.obj
+[71/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ceva-npn/ei_classifier_porting.cpp.obj
+[72/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/brickml/debug_log.cpp.obj
+[73/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/arduino/ei_classifier_porting.cpp.obj
+[74/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/common/misc/dsps_pwroftwo.cpp.obj
+[75/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/clib/ei_classifier_porting.cpp.obj
+[76/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/clib/debug_log.cpp.obj
+[77/1086] Building C object main/CMakeFiles/pico_emb.dir/main.c.obj
+[78/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/debug_log.cpp.obj
+[79/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/dsp/image/processing.cpp.obj
+[80/1086] Building C object ssd1306_lib/CMakeFiles/ssd1306_lib.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.obj
+[81/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ei_classifier_porting.cpp.obj
+[82/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/himax-we2/debug_log.cpp.obj
+[83/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/himax-we2/ei_classifier_porting.cpp.obj
+[84/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/iar/ei_classifier_porting.cpp.obj
+[85/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/himax/debug_log.cpp.obj
+[86/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/iar/debug_log.cpp.obj
+[87/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/infineon-psoc62/debug_log.cpp.obj
+[88/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/himax/ei_classifier_porting.cpp.obj
+[89/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/infineon-psoc62/ei_classifier_porting.cpp.obj
+[90/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/mingw32/debug_log.cpp.obj
+[91/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/mbed/debug_log.cpp.obj
+[92/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/mingw32/ei_classifier_porting.cpp.obj
+[93/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/mbed/ei_classifier_porting.cpp.obj
+[94/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/particle/debug_log.cpp.obj
+[95/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/particle/ei_classifier_porting.cpp.obj
+[96/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/posix/ei_classifier_porting.cpp.obj
+[97/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/posix/debug_log.cpp.obj
+[98/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/renesas-ra/debug_log.cpp.obj
+[99/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/seeed-vision-ai/debug_log.cpp.obj
+[100/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/seeed-vision-ai/ei_classifier_porting.cpp.obj
+[101/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/renesas-ra/ei_classifier_porting.cpp.obj
+[102/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/silabs/debug_log.cpp.obj
+[103/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/dsp/kissfft/kiss_fftr.cpp.obj
+[104/1086] Linking CXX static library ssd1306_lib\libssd1306_lib.a
+[105/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/sony/debug_log.cpp.obj
+[106/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/silabs/ei_classifier_porting.cpp.obj
+[107/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/stm32-cubeai/debug_log.cpp.obj
+[108/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/sony/ei_classifier_porting.cpp.obj
+[109/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/raspberry/ei_classifier_porting.cpp.obj
+[110/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/stm32-cubeai/ei_classifier_porting.cpp.obj
+[111/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/synaptics/debug_log.cpp.obj
+[112/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/core/api/error_reporter.cc.obj
+[113/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/zephyr/ei_classifier_porting.cpp.obj
+[114/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ti/debug_log.cpp.obj
+[115/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ti/ei_classifier_porting.cpp.obj
+[116/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/dsp/kissfft/kiss_fft.cpp.obj
+[117/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/synaptics/ei_classifier_porting.cpp.obj
+[118/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/zephyr/debug_log.cpp.obj
+[119/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/core/api/tensor_utils.cc.obj
+[120/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/core/api/common.cc.obj
+[121/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/dsp/memory.cpp.obj
+[122/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/internal/portable_tensor_utils.cc.obj
+[123/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/internal/quantization_util.cc.obj
+[124/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/internal/tensor_utils.cc.obj
+[125/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/flatbuffer_conversions_bridge.cc.obj
+[126/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/core/api/op_resolver.cc.obj
+[127/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/fake_micro_context.cc.obj
+[128/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/activations.cc.obj
+[129/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/kernel_util_lite.cc.obj
+[130/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/activations_common.cc.obj
+[131/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/add_n.cc.obj
+[132/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/custom/tree_ensemble_classifier.cc.obj
+[133/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/arg_min_max.cc.obj
+[134/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/kernels/internal/reference_portable_tensor_utils.cc.obj
+[135/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/all_ops_resolver.cc.obj
+[136/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/broadcast_args.cc.obj
+[137/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/batch_to_space_nd.cc.obj
+[138/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/ceil.cc.obj
+[139/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/broadcast_to.cc.obj
+[140/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/cast.cc.obj
+[141/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/flatbuffer_utils.cc.obj
+[142/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/circular_buffer.cc.obj
+[143/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/batch_matmul.cc.obj
+[144/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/add_common.cc.obj
+[145/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/circular_buffer_common.cc.obj
+[146/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/assign_variable.cc.obj
+[147/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/complex_abs.cc.obj
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/complex_abs.cc: In function 'TfLiteStatus tflite::ops::micro::complex_abs::Eval(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/complex_abs.cc:77:34: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   77 |   for (size_t dim_ix = 0; dim_ix < input->dims->size; dim_ix++) {
+      |                           ~~~~~~~^~~~~~~~~~~~~~~~~~~
+[148/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/concatenation.cc.obj
+[149/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/add.cc.obj
+[150/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/conv_common.cc.obj
+[151/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/conv.cc.obj
+[152/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/depth_to_space.cc.obj
+[153/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/depthwise_conv.cc.obj
+[154/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/call_once.cc.obj
+[155/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/depthwise_conv_common.cc.obj
+[156/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/dequantize.cc.obj
+[157/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/dequantize_common.cc.obj
+[158/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/cumsum.cc.obj
+[159/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/core/api/flatbuffer_conversions.cc.obj
+[160/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/ethosu.cc.obj
+[161/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/elu.cc.obj
+[162/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/div.cc.obj
+[163/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/exp.cc.obj
+[164/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/elementwise.cc.obj
+[165/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/expand_dims.cc.obj
+[166/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/floor.cc.obj
+[167/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/fill.cc.obj
+[168/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/detection_postprocess.cc.obj
+[169/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/floor_div.cc.obj
+[170/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/fully_connected_common.cc.obj
+[171/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/floor_mod.cc.obj
+[172/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/fully_connected.cc.obj
+[173/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/gather_nd.cc.obj
+[174/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/gather.cc.obj
+[175/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/comparisons.cc.obj
+[176/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/hard_swish.cc.obj
+[177/1086] Building CXX object main/CMakeFiles/pico_emb.dir/gesture.cpp.obj
+In file included from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/classifier/ei_model_types.h:42,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/classifier/ei_run_classifier.h:38,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/main/gesture.cpp:22:
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/dsp/numpy.hpp: In static member function 'static float ei::numpy::log(float)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/dsp/numpy.hpp:1570:15: warning: 'g' is used uninitialized [-Wuninitialized]
+ 1570 |         float m = (float) * ((float *)&g);
+      |               ^
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/dsp/numpy.hpp:1567:17: note: 'g' declared here
+ 1567 |         int32_t g = (int32_t) * ((int32_t *)&a);
+      |                 ^
+[178/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/hard_swish_common.cc.obj
+[179/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/mli_interface.cc.obj
+[180/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/kernel_runner.cc.obj
+[181/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/l2_pool_2d.cc.obj
+[182/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/mli_slicers.cc.obj
+[183/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/micro_tensor_utils.cc.obj
+[184/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/l2norm.cc.obj
+[185/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/leaky_relu.cc.obj
+[186/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/leaky_relu_common.cc.obj
+[187/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/logical.cc.obj
+[188/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/logical_common.cc.obj
+[189/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/logistic_common.cc.obj
+[190/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/log_softmax.cc.obj
+[191/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/logistic.cc.obj
+[192/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/mirror_pad.cc.obj
+[193/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/maximum_minimum.cc.obj
+[194/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/lstm_eval.cc.obj
+[195/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/neg.cc.obj
+[196/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/pack.cc.obj
+[197/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/pooling_common.cc.obj
+[198/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/kernel_util_micro.cc.obj
+[199/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/pooling.cc.obj
+[200/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/quantize.cc.obj
+[201/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/prelu.cc.obj
+[202/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/if.cc.obj
+[203/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/prelu_common.cc.obj
+[204/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/scratch_buffers.cc.obj
+[205/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/scratch_buf_mgr.cc.obj
+[206/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/pad.cc.obj
+[207/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc.obj
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc: In function 'TfLiteStatus tflite::ops::micro::real::Prepare(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc:58:34: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   58 |   for (size_t dim_ix = 0; dim_ix < input->dims->size; dim_ix++) {
+      |                           ~~~~~~~^~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc:63:34: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   63 |   for (size_t dim_ix = 0; dim_ix < output->dims->size; dim_ix++) {
+      |                           ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc: In function 'TfLiteStatus tflite::ops::micro::real::RealEval(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc:79:34: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   79 |   for (size_t dim_ix = 0; dim_ix < input->dims->size; dim_ix++) {
+      |                           ~~~~~~~^~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc: In function 'TfLiteStatus tflite::ops::micro::real::ImagEval(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/real.cc:97:34: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+   97 |   for (size_t dim_ix = 0; dim_ix < input->dims->size; dim_ix++) {
+      |                           ~~~~~~~^~~~~~~~~~~~~~~~~~~
+[208/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/reduce.cc.obj
+[209/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/quantize_common.cc.obj
+[210/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/resize_bilinear.cc.obj
+[211/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/resize_nearest_neighbor.cc.obj
+[212/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/round.cc.obj
+[213/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc.obj
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc: In function 'TfLiteStatus tflite::ops::micro::rfft2d::Prepare(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc:92:18: warning: unused variable 'fft_length_data' [-Wunused-variable]
+   92 |   const int32_t* fft_length_data = GetTensorData<int32_t>(fft_length);
+      |                  ^~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc: In function 'TfLiteStatus tflite::ops::micro::rfft2d::Eval(TfLiteContext*, TfLiteNode*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc:168:26: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  168 |   for (size_t ix = 1; ix < input->dims->size; ix++) {
+      |                       ~~~^~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc:172:26: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  172 |   for (size_t ix = 1; ix < output->dims->size; ix++) {
+      |                       ~~~^~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/rfft2d.cc:176:28: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  176 |   for (size_t row = 0; row < input->dims->data[0]; row++) {
+      |                        ~~~~^~~~~~~~~~~~~~~~~~~~~~
+[214/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/slice.cc.obj
+[215/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/softmax_common.cc.obj
+[216/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/reduce_common.cc.obj
+[217/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/softmax.cc.obj
+[218/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/scatter_nd.cc.obj
+[219/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/space_to_depth.cc.obj
+[220/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/space_to_batch_nd.cc.obj
+[221/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/read_variable.cc.obj
+[222/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/mul.cc.obj
+[223/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/split.cc.obj
+[224/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/split_v.cc.obj
+[225/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/mul_common.cc.obj
+[226/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/select.cc.obj
+[227/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/reshape.cc.obj
+[228/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/squared_difference.cc.obj
+[229/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/svdf.cc.obj
+[230/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/sub_common.cc.obj
+[231/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/tanh.cc.obj
+[232/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/greedy_memory_planner.cc.obj
+[233/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/svdf_common.cc.obj
+[234/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/shape.cc.obj
+[235/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/linear_memory_planner.cc.obj
+[236/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/unpack.cc.obj
+[237/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/sub.cc.obj
+[238/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/transpose_conv.cc.obj
+[239/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_error_reporter.cc.obj
+[240/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/transpose.cc.obj
+[241/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/unidirectional_sequence_lstm.cc.obj
+[242/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/zeros_like.cc.obj
+[243/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_log.cc.obj
+[244/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_planner/non_persistent_buffer_planner_shim.cc.obj
+[245/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/tree_ensemble_classifier.cc.obj
+[246/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_profiler.cc.obj
+[247/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_time.cc.obj
+[248/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_string.cc.obj
+[249/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/tile.cc.obj
+[250/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/squeeze.cc.obj
+[251/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/strided_slice.cc.obj
+[252/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/recording_single_arena_buffer_allocator.cc.obj
+[253/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_context.cc.obj
+[254/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/system_setup.cc.obj
+[255/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/op_resolver_bridge.cc.obj
+[256/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/var_handle.cc.obj
+[257/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/mock_micro_graph.cc.obj
+[258/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc.obj
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = float; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = float; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:195:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  195 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<float>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  196 |            tflite::micro::GetTensorData<float>(output_values));
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = unsigned char; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = unsigned char; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:199:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  199 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<uint8_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  200 |            output_values->data.uint8);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = signed char; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = signed char; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:203:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  203 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int8_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  204 |            output_values->data.int8);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = short int; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = short int; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:207:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  207 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int16_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  208 |            output_values->data.i16);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = long int; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = long int; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:211:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  211 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int32_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  212 |            output_values->data.i32);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = long long int; Tidx = long int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = long long int; Tidx = long int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:215:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = long int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  215 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int64_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |            output_values->data.i64);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:253:22:   required from here
+  253 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int32_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<long int, std::allocator<long int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = float; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = float; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:195:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  195 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<float>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  196 |            tflite::micro::GetTensorData<float>(output_values));
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = unsigned char; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = unsigned char; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:199:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  199 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<uint8_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  200 |            output_values->data.uint8);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = signed char; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = signed char; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:203:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  203 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int8_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  204 |            output_values->data.int8);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = short int; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = short int; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:207:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  207 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int16_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  208 |            output_values->data.i16);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = long int; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = long int; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:211:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  211 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int32_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  212 |            output_values->data.i32);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc: In instantiation of 'void tflite::topk_v2::{anonymous}::TopContainer<T, Tidx>::push(Tidx) [with T = long long int; Tidx = short int]':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:122:16:   required from 'void tflite::topk_v2::{anonymous}::TopK(int32_t, int32_t, const T*, int32_t, Tidx*, T*) [with T = long long int; Tidx = short int; int32_t = long int]'
+  122 |       topc.push(c);
+      |       ~~~~~~~~~^~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:215:11:   required from 'TfLiteStatus tflite::topk_v2::TopKImpl(TfLiteContext*, TfLiteNode*, int32_t, idx_type*) [with idx_type = short int; TfLiteStatus = TfLiteStatus; TfLiteContext = TfLiteContext; TfLiteNode = TfLiteNode; int32_t = long int]'
+  215 |       TopK(row_size, num_rows, tflite::micro::GetTensorData<int64_t>(input), k, output_indexes,
+      |       ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |            output_values->data.i64);
+      |            ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:256:22:   required from here
+  256 |       return TopKImpl(context, node, k, tflite::micro::GetTensorData<int16_t>(output_indexes));
+      |              ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/topk_v2.cc:48:29: warning: comparison of integer expressions of different signedness: 'std::vector<short int, std::allocator<short int> >::size_type' {aka 'unsigned int'} and 'long int' [-Wsign-compare]
+   48 |       if (container_.size() == k_ + 1) {
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+[259/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/schema_utils.cc.obj
+[260/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/kernels/while.cc.obj
+[261/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.cc.obj
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.cc: In function 'TfLiteStatus tflite::BytesRequiredForTensor(const Tensor&, size_t*, size_t*)':
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.cc:107:61: warning: 'flatbuffers::uoffset_t flatbuffers::Vector<T>::Length() const [with T = long int; flatbuffers::uoffset_t = long unsigned int]' is deprecated: use size() instead [-Wdeprecated-declarations]
+  107 |     for (size_t n = 0; n < flatbuffer_tensor.shape()->Length(); ++n) {
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/third_party/flatbuffers/include/flatbuffers/fb_array.h:22,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/third_party/flatbuffers/include/flatbuffers/flatbuffers.h:22,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/schema/schema_generated.h:4,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.h:22,
+                 from C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/tensorflow/lite/micro/memory_helpers.cc:16:
+C:/insper/compem/26a-emb-aps-2-geofs/ei-model/edge-impulse-sdk/third_party/flatbuffers/include/flatbuffers/fb_vector.h:163:13: note: declared here
+  163 |   uoffset_t Length() const { return size(); }
+      |             ^~~~~~
+[262/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q15.c.obj
+[263/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f32.c.obj
+[264/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q31.c.obj
+[265/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f16.c.obj
+[266/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_f64.c.obj
+[267/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_abs_q7.c.obj
+[268/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/test_helper_custom_ops.cc.obj
+[269/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_q15.c.obj
+[270/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_f64.c.obj
+[271/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_f16.c.obj
+[272/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_f32.c.obj
+[273/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_q31.c.obj
+[274/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_add_q7.c.obj
+[275/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_and_u16.c.obj
+[276/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_graph.cc.obj
+[277/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_allocation_info.cc.obj
+[278/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_clip_f32.c.obj
+[279/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_clip_f16.c.obj
+[280/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_and_u32.c.obj
+[281/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q15.c.obj
+[282/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q31.c.obj
+[283/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_and_u8.c.obj
+[284/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_utils.cc.obj
+[285/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/non_persistent_arena_buffer_allocator.cc.obj
+[286/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_f16.c.obj
+[287/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_resource_variable.cc.obj
+[288/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_clip_q7.c.obj
+[289/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_f32.c.obj
+[290/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/persistent_arena_buffer_allocator.cc.obj
+[291/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q7.c.obj
+[292/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q15.c.obj
+[293/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_f64.c.obj
+[294/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_f16.c.obj
+[295/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_allocator.cc.obj
+[296/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_dot_prod_q31.c.obj
+[297/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_f32.c.obj
+[298/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/micro_interpreter.cc.obj
+[299/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_f64.c.obj
+[300/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q15.c.obj
+[301/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_f32.c.obj
+[302/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_f16.c.obj
+[303/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q31.c.obj
+[304/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_mult_q7.c.obj
+[305/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_f64.c.obj
+[306/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_not_u16.c.obj
+[307/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q7.c.obj
+[308/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q15.c.obj
+[309/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_negate_q31.c.obj
+[310/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_not_u8.c.obj
+[311/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_f16.c.obj
+[312/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_not_u32.c.obj
+[313/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_f64.c.obj
+[314/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_f32.c.obj
+[315/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q15.c.obj
+[316/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q31.c.obj
+[317/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_or_u16.c.obj
+[318/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_offset_q7.c.obj
+[319/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_or_u32.c.obj
+[320/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_or_u8.c.obj
+[321/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/recording_micro_allocator.cc.obj
+[322/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_f32.c.obj
+[323/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q7.c.obj
+[324/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q15.c.obj
+[325/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_f16.c.obj
+[326/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_f64.c.obj
+[327/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q7.c.obj
+[328/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_f16.c.obj
+[329/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_scale_q31.c.obj
+[330/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q15.c.obj
+[331/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_shift_q31.c.obj
+[332/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_f32.c.obj
+[333/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q31.c.obj
+[334/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q15.c.obj
+[335/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_f64.c.obj
+[336/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_sub_q7.c.obj
+[337/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f16.c.obj
+[338/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u32.c.obj
+[339/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_const_structs_f16.c.obj
+[340/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u16.c.obj
+[341/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BasicMathFunctions/arm_xor_u8.c.obj
+[342/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/single_arena_buffer_allocator.cc.obj
+[343/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/BayesFunctions/arm_gaussian_naive_bayes_predict_f32.c.obj
+[344/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_mve_tables.c.obj
+[345/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_common_tables_f16.c.obj
+[346/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_mve_tables_f16.c.obj
+[347/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_const_structs.c.obj
+[348/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_f16.c.obj
+[349/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_f32.c.obj
+[350/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q15.c.obj
+[351/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_conj_q31.c.obj
+[352/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f16.c.obj
+[353/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_f16.c.obj
+[354/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q31.c.obj
+[355/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f64.c.obj
+[356/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_f32.c.obj
+[357/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_dot_prod_q15.c.obj
+[358/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q15.c.obj
+[359/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_fast_q15.c.obj
+[360/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_f32.c.obj
+[361/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f16.c.obj
+[362/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_q31.c.obj
+[363/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f64.c.obj
+[364/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_f32.c.obj
+[365/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q31.c.obj
+[366/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mag_squared_q15.c.obj
+[367/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f16.c.obj
+[368/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f64.c.obj
+[369/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_f32.c.obj
+[370/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_f16.c.obj
+[371/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q31.c.obj
+[372/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q31.c.obj
+[373/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_q15.c.obj
+[374/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_cmplx_q15.c.obj
+[375/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_q31.c.obj
+[376/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_q15.c.obj
+[377/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_f32.c.obj
+[378/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_init_f32.c.obj
+[379/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ComplexMathFunctions/arm_cmplx_mult_real_f32.c.obj
+[380/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_sin_cos_f32.c.obj
+[381/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_braycurtis_distance_f16.c.obj
+[382/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_chebyshev_distance_f16.c.obj
+[383/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_braycurtis_distance_f32.c.obj
+[384/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_canberra_distance_f16.c.obj
+[385/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_q15.c.obj
+[386/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_pid_reset_q31.c.obj
+[387/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/ControllerFunctions/arm_sin_cos_q31.c.obj
+[388/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_canberra_distance_f32.c.obj
+[389/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_correlation_distance_f16.c.obj
+[390/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cityblock_distance_f64.c.obj
+[391/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_chebyshev_distance_f64.c.obj
+[392/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cityblock_distance_f16.c.obj
+[393/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_chebyshev_distance_f32.c.obj
+[394/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cityblock_distance_f32.c.obj
+[395/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_boolean_distance.c.obj
+[396/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/CommonTables/arm_common_tables.c.obj
+[397/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_correlation_distance_f32.c.obj
+[398/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cosine_distance_f16.c.obj
+[399/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cosine_distance_f32.c.obj
+[400/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_dice_distance.c.obj
+[401/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_cosine_distance_f64.c.obj
+[402/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_jaccard_distance.c.obj
+[403/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_euclidean_distance_f32.c.obj
+[404/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_euclidean_distance_f16.c.obj
+[405/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_euclidean_distance_f64.c.obj
+[406/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_hamming_distance.c.obj
+[407/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_minkowski_distance_f32.c.obj
+[408/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_minkowski_distance_f16.c.obj
+[409/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_jensenshannon_distance_f16.c.obj
+[410/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_kulsinski_distance.c.obj
+[411/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_jensenshannon_distance_f32.c.obj
+[412/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_rogerstanimoto_distance.c.obj
+[413/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_russellrao_distance.c.obj
+[414/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_sokalmichener_distance.c.obj
+[415/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_sokalsneath_distance.c.obj
+[416/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_cos_f32.c.obj
+[417/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_cos_q15.c.obj
+[418/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_atan2_f16.c.obj
+[419/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/DistanceFunctions/arm_yule_distance.c.obj
+[420/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_cos_q31.c.obj
+[421/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_sin_q15.c.obj
+[422/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_sin_f32.c.obj
+[423/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_sin_q31.c.obj
+[424/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_atan2_f32.c.obj
+[425/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_divide_q15.c.obj
+[426/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_divide_q31.c.obj
+[427/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_atan2_q15.c.obj
+[428/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_atan2_q31.c.obj
+[429/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_sqrt_q15.c.obj
+[430/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_sqrt_q31.c.obj
+[431/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vexp_f16.c.obj
+[432/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vexp_f32.c.obj
+[433/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vexp_f64.c.obj
+[434/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vinverse_f16.c.obj
+[435/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vlog_f16.c.obj
+[436/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_f16.c.obj
+[437/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vlog_f64.c.obj
+[438/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_init_q31.c.obj
+[439/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vlog_f32.c.obj
+[440/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_f32.c.obj
+[441/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vlog_q15.c.obj
+[442/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_f16.c.obj
+[443/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_f32.c.obj
+[444/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FastMathFunctions/arm_vlog_q31.c.obj
+[445/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q15.c.obj
+[446/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_32x64_q31.c.obj
+[447/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_fast_q31.c.obj
+[448/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q31.c.obj
+[449/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_init_q15.c.obj
+[450/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f16.c.obj
+[451/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f32.c.obj
+[452/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f16.c.obj
+[453/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_init_f64.c.obj
+[454/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_init_f16.c.obj
+[455/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q15.c.obj
+[456/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df1_q31.c.obj
+[457/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f32.c.obj
+[458/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_init_f32.c.obj
+[459/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_f16.c.obj
+[460/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_stereo_df2T_f32.c.obj
+[461/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_opt_q15.c.obj
+[462/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_biquad_cascade_df2T_f64.c.obj
+[463/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_f32.c.obj
+[464/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_opt_q15.c.obj
+[465/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_opt_q7.c.obj
+[466/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_q31.c.obj
+[467/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_fast_q15.c.obj
+[468/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_opt_q15.c.obj
+[469/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_f32.c.obj
+[470/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q15.c.obj
+[471/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_opt_q7.c.obj
+[472/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q31.c.obj
+[473/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f16.c.obj
+[474/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q31.c.obj
+[475/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_fast_q15.c.obj
+[476/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q15.c.obj
+[477/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_partial_q7.c.obj
+[478/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_q31.c.obj
+[479/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_q15.c.obj
+[480/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f32.c.obj
+[481/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_f64.c.obj
+[482/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_conv_q7.c.obj
+[483/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_opt_q15.c.obj
+[484/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_opt_q7.c.obj
+[485/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_opt_q15.c.obj
+[486/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_q15.c.obj
+[487/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q31.c.obj
+[488/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_fast_q31.c.obj
+[489/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q15.c.obj
+[490/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q15.c.obj
+[491/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_q31.c.obj
+[492/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_f32.c.obj
+[493/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f16.c.obj
+[494/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_init_f32.c.obj
+[495/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q15.c.obj
+[496/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_fast_q31.c.obj
+[497/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f32.c.obj
+[498/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_correlate_q7.c.obj
+[499/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_q15.c.obj
+[500/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_decimate_q31.c.obj
+[501/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f16.c.obj
+[502/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_f64.c.obj
+[503/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f32.c.obj
+[504/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q31.c.obj
+[505/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q15.c.obj
+[506/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_f64.c.obj
+[507/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q15.c.obj
+[508/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_init_q7.c.obj
+[509/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_f32.c.obj
+[510/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_fast_q15.c.obj
+[511/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_fast_q31.c.obj
+[512/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_init_q31.c.obj
+[513/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q31.c.obj
+[514/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_f32.c.obj
+[515/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_q15.c.obj
+[516/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_f32.c.obj
+[517/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_f32.c.obj
+[518/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_init_q15.c.obj
+[519/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q15.c.obj
+[520/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_interpolate_q31.c.obj
+[521/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_f32.c.obj
+[522/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_q15.c.obj
+[523/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_q15.c.obj
+[524/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_q31.c.obj
+[525/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q7.c.obj
+[526/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_init_q31.c.obj
+[527/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_lattice_q31.c.obj
+[528/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_q7.c.obj
+[529/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_f32.c.obj
+[530/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q15.c.obj
+[531/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_f32.c.obj
+[532/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q31.c.obj
+[533/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_f32.c.obj
+[534/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q15.c.obj
+[535/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_init_q31.c.obj
+[536/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_q15.c.obj
+[537/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_f32.c.obj
+[538/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_f16.c.obj
+[539/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_f32.c.obj
+[540/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_levinson_durbin_q31.c.obj
+[541/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_fir_sparse_q7.c.obj
+[542/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_q15.c.obj
+[543/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_f32.c.obj
+[544/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_init_q31.c.obj
+[545/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_iir_lattice_q31.c.obj
+[546/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_f32.c.obj
+[547/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_f32.c.obj
+[548/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_q15.c.obj
+[549/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_init_q31.c.obj
+[550/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_f16.c.obj
+[551/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_q31.c.obj
+[552/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q15.c.obj
+[553/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_norm_q15.c.obj
+[554/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_f32.c.obj
+[555/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q31.c.obj
+[556/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q15.c.obj
+[557/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_q15.c.obj
+[558/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/FilteringFunctions/arm_lms_q31.c.obj
+[559/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_f16.c.obj
+[560/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_bilinear_interp_q7.c.obj
+[561/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_f32.c.obj
+[562/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q31.c.obj
+[563/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_spline_interp_f32.c.obj
+[564/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_linear_interp_q7.c.obj
+[565/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_householder_f16.c.obj
+[566/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/InterpolationFunctions/arm_spline_interp_init_f32.c.obj
+[567/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_q15.c.obj
+[568/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f32.c.obj
+[569/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_householder_f32.c.obj
+[570/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_householder_f64.c.obj
+[571/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f32.c.obj
+[572/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f16.c.obj
+[573/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_q31.c.obj
+[574/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_f16.c.obj
+[575/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_add_f16.c.obj
+[576/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cholesky_f64.c.obj
+[577/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q15.c.obj
+[578/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_f32.c.obj
+[579/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_mult_q31.c.obj
+[580/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_f32.c.obj
+[581/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_f16.c.obj
+[582/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_f16.c.obj
+[583/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/micro/test_helpers.cc.obj
+[584/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_q15.c.obj
+[585/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_cmplx_trans_q31.c.obj
+[586/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_q15.c.obj
+[587/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_q31.c.obj
+[588/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_init_f32.c.obj
+[589/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f16.c.obj
+[590/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_ldlt_f32.c.obj
+[591/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f16.c.obj
+[592/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_ldlt_f64.c.obj
+[593/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f64.c.obj
+[594/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f32.c.obj
+[595/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_inverse_f32.c.obj
+[596/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q31.c.obj
+[597/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_f64.c.obj
+[598/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_opt_q31.c.obj
+[599/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q31.c.obj
+[600/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_f16.c.obj
+[601/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q7.c.obj
+[602/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_fast_q15.c.obj
+[603/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_mult_q15.c.obj
+[604/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_qr_f16.c.obj
+[605/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f16.c.obj
+[606/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_q15.c.obj
+[607/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_f32.c.obj
+[608/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_scale_q31.c.obj
+[609/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f64.c.obj
+[610/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_qr_f64.c.obj
+[611/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f16.c.obj
+[612/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_lower_triangular_f32.c.obj
+[613/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_qr_f32.c.obj
+[614/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f32.c.obj
+[615/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f16.c.obj
+[616/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_q15.c.obj
+[617/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_solve_upper_triangular_f64.c.obj
+[618/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f32.c.obj
+[619/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f16.c.obj
+[620/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f32.c.obj
+[621/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_f64.c.obj
+[622/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_sub_q31.c.obj
+[623/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_f64.c.obj
+[624/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_f16.c.obj
+[625/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q15.c.obj
+[626/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q31.c.obj
+[627/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_trans_q7.c.obj
+[628/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion2rotation_f32.c.obj
+[629/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_inverse_f32.c.obj
+[630/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_f32.c.obj
+[631/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q7.c.obj
+[632/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q15.c.obj
+[633/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_conjugate_f32.c.obj
+[634/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/MatrixFunctions/arm_mat_vec_mult_q31.c.obj
+[635/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_normalize_f32.c.obj
+[636/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_product_f32.c.obj
+[637/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_init_f16.c.obj
+[638/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_norm_f32.c.obj
+[639/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_quaternion_product_single_f32.c.obj
+[640/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/QuaternionMathFunctions/arm_rotation2quaternion_f32.c.obj
+[641/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_init_f16.c.obj
+[642/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_predict_f16.c.obj
+[643/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_init_f32.c.obj
+[644/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_linear_predict_f32.c.obj
+[645/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_init_f32.c.obj
+[646/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_predict_f16.c.obj
+[647/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_polynomial_predict_f32.c.obj
+[648/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_predict_f16.c.obj
+[649/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_init_f16.c.obj
+[650/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_init_f32.c.obj
+[651/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_rbf_predict_f32.c.obj
+[652/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_predict_f16.c.obj
+[653/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_f16.c.obj
+[654/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_predict_f32.c.obj
+[655/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_f16.c.obj
+[656/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_init_f16.c.obj
+[657/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_f32.c.obj
+[658/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SVMFunctions/arm_svm_sigmoid_init_f32.c.obj
+[659/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_f32.c.obj
+[660/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_f64.c.obj
+[661/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_q15.c.obj
+[662/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_q31.c.obj
+[663/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_f64.c.obj
+[664/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_no_idx_q7.c.obj
+[665/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_f16.c.obj
+[666/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q15.c.obj
+[667/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q31.c.obj
+[668/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_f64.c.obj
+[669/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_q15.c.obj
+[670/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmax_q7.c.obj
+[671/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_f32.c.obj
+[672/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_f32.c.obj
+[673/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_f16.c.obj
+[674/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_f64.c.obj
+[675/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q7.c.obj
+[676/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_q31.c.obj
+[677/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q31.c.obj
+[678/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_q15.c.obj
+[679/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_absmin_no_idx_q7.c.obj
+[680/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_accumulate_f32.c.obj
+[681/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_accumulate_f16.c.obj
+[682/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f16.c.obj
+[683/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_accumulate_f64.c.obj
+[684/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f32.c.obj
+[685/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_entropy_f64.c.obj
+[686/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_dot_prod_f32.c.obj
+[687/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f16.c.obj
+[688/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f32.c.obj
+[689/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_f32.c.obj
+[690/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_f16.c.obj
+[691/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_logsumexp_dot_prod_f16.c.obj
+[692/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_kullback_leibler_f64.c.obj
+[693/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_f64.c.obj
+[694/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_f32.c.obj
+[695/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_f16.c.obj
+[696/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_q15.c.obj
+[697/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_f16.c.obj
+[698/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_f32.c.obj
+[699/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_q15.c.obj
+[700/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_f64.c.obj
+[701/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_q7.c.obj
+[702/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_no_idx_q31.c.obj
+[703/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_q7.c.obj
+[704/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_max_q31.c.obj
+[705/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_f32.c.obj
+[706/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_f16.c.obj
+[707/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q15.c.obj
+[708/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_f64.c.obj
+[709/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_f16.c.obj
+[710/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q31.c.obj
+[711/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_f64.c.obj
+[712/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_f64.c.obj
+[713/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_f16.c.obj
+[714/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mean_q7.c.obj
+[715/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_f32.c.obj
+[716/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_q31.c.obj
+[717/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_f32.c.obj
+[718/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_q7.c.obj
+[719/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_no_idx_q15.c.obj
+[720/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_q15.c.obj
+[721/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_q31.c.obj
+[722/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_min_q7.c.obj
+[723/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_f64.c.obj
+[724/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_f16.c.obj
+[725/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_q31.c.obj
+[726/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_f32.c.obj
+[727/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_q15.c.obj
+[728/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_f64.c.obj
+[729/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_std_f16.c.obj
+[730/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_rms_f32.c.obj
+[731/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_q31.c.obj
+[732/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_q15.c.obj
+[733/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_rms_f16.c.obj
+[734/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_rms_q15.c.obj
+[735/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_rms_q31.c.obj
+[736/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_mse_q7.c.obj
+[737/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_q7.c.obj
+[738/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_f16.c.obj
+[739/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_power_f32.c.obj
+[740/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_std_f64.c.obj
+[741/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f16.c.obj
+[742/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_std_q15.c.obj
+[743/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_std_f32.c.obj
+[744/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_std_q31.c.obj
+[745/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f64.c.obj
+[746/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_var_f32.c.obj
+[747/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_f16.c.obj
+[748/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_barycenter_f32.c.obj
+[749/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_var_q31.c.obj
+[750/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_barycenter_f16.c.obj
+[751/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/StatisticsFunctions/arm_var_q15.c.obj
+[752/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_q15.c.obj
+[753/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_bubble_sort_f32.c.obj
+[754/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_f32.c.obj
+[755/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_bitonic_sort_f32.c.obj
+[756/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_f64.c.obj
+[757/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_f16.c.obj
+[758/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_f16_to_float.c.obj
+[759/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_q7.c.obj
+[760/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_f32.c.obj
+[761/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_f16_to_q15.c.obj
+[762/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_copy_q31.c.obj
+[763/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_f64.c.obj
+[764/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_q15.c.obj
+[765/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_q7.c.obj
+[766/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_float_to_q31.c.obj
+[767/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_float_to_q15.c.obj
+[768/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_float_to_f16.c.obj
+[769/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_fill_q31.c.obj
+[770/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_heap_sort_f32.c.obj
+[771/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_float_to_q7.c.obj
+[772/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q15_to_f16.c.obj
+[773/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_merge_sort_f32.c.obj
+[774/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q15_to_q31.c.obj
+[775/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_merge_sort_init_f32.c.obj
+[776/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q31_to_float.c.obj
+[777/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_insertion_sort_f32.c.obj
+[778/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q31_to_q15.c.obj
+[779/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q15_to_float.c.obj
+[780/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q15_to_q7.c.obj
+[781/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q31_to_q7.c.obj
+[782/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q7_to_float.c.obj
+[783/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q7_to_q31.c.obj
+[784/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_q7_to_q15.c.obj
+[785/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_sort_f32.c.obj
+[786/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_quick_sort_f32.c.obj
+[787/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_weighted_sum_f16.c.obj
+[788/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_selection_sort_f32.c.obj
+[789/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_weighted_sum_f32.c.obj
+[790/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/SupportFunctions/arm_sort_init_f32.c.obj
+[791/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_bitreversal_f16.c.obj
+[792/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_f16.c.obj
+[793/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f16.c.obj
+[794/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.c.obj
+[795/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f32.c.obj
+[796/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_bitreversal.c.obj
+[797/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_f64.c.obj
+[798/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_f64.c.obj
+[799/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_f16.c.obj
+[800/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_q15.c.obj
+[801/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_init_q31.c.obj
+[802/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_q15.c.obj
+[803/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_f16.c.obj
+[804/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q15.c.obj
+[805/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_f32.c.obj
+[806/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_q31.c.obj
+[807/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_f32.c.obj
+[808/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_init_q31.c.obj
+[809/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_f32.c.obj
+[810/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_f16.c.obj
+[811/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_f32.c.obj
+[812/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_f16.c.obj
+[813/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_q15.c.obj
+[814/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix2_q31.c.obj
+[815/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q15.c.obj
+[816/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix8_f16.c.obj
+[817/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_init_q31.c.obj
+[818/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_f32.c.obj
+[819/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_q15.c.obj
+[820/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_init_q31.c.obj
+[821/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_f32.c.obj
+[822/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_f32.c.obj
+[823/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_init_f16.c.obj
+[824/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_q15.c.obj
+[825/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_dct4_q31.c.obj
+[826/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_f16.c.obj
+[827/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_f32.c.obj
+[828/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_q15.c.obj
+[829/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix8_f32.c.obj
+[830/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_init_q31.c.obj
+[831/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_cfft_radix4_q31.c.obj
+[832/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_init_q15.c.obj
+[833/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_init_f32.c.obj
+[834/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_q15.c.obj
+[835/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f16.c.obj
+[836/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_mfcc_q31.c.obj
+[837/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f32.c.obj
+[838/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f16.c.obj
+[839/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_f32.c.obj
+[840/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_f64.c.obj
+[841/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f64.c.obj
+[842/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_fast_init_f32.c.obj
+[843/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_q31.c.obj
+[844/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_f32.c.obj
+[845/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q7.c.obj
+[846/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ActivationFunctions/arm_relu_q15.c.obj
+[847/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_q15.c.obj
+[848/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ActivationFunctions/arm_nn_activations_q15.c.obj
+[849/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_init_q15.c.obj
+[850/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ActivationFunctions/arm_relu6_s8.c.obj
+[851/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ActivationFunctions/arm_relu_q7.c.obj
+[852/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/DSP/Source/TransformFunctions/arm_rfft_q31.c.obj
+[853/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_w.c.obj
+[854/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s16.c.obj
+[855/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s16.c.obj
+[856/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_mul_s8.c.obj
+[857/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_x.c.obj
+[858/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/BasicMathFunctions/arm_elementwise_add_s8.c.obj
+[859/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_y.c.obj
+[860/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConcatenationFunctions/arm_concatenation_s8_z.c.obj
+[861/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_s8_fast.c.obj
+[862/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1_x_n_s8.c.obj
+[863/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_1x1_HWC_q7_fast_nonsquare.c.obj
+[864/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_basic.c.obj
+[865/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast_nonsquare.c.obj
+[866/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q15_fast.c.obj
+[867/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_RGB.c.obj
+[868/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic.c.obj
+[869/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s16.c.obj
+[870/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_basic_nonsquare.c.obj
+[871/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s16.c.obj
+[872/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_wrapper_s8.c.obj
+[873/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_s8.c.obj
+[874/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s16.c.obj
+[875/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_fast_s16.c.obj
+[876/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast_nonsquare.c.obj
+[877/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s16.c.obj
+[878/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_convolve_HWC_q7_fast.c.obj
+[879/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_wrapper_s8.c.obj
+[880/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_fast_s16.c.obj
+[881/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8_opt.c.obj
+[882/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_depthwise_conv_s8_core.c.obj
+[883/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_s8.c.obj
+[884/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7.c.obj
+[885/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_separable_conv_HWC_q7_nonsquare.c.obj
+[886/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_u8_basic_ver1.c.obj
+[887/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15_reordered.c.obj
+[888/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_s8.c.obj
+[889/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_q7_q15.c.obj
+[890/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_nn_mat_mult_kernel_s8_s16.c.obj
+[891/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ConvolutionFunctions/arm_depthwise_conv_3x3_s8.c.obj
+[892/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15.c.obj
+[893/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15.c.obj
+[894/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_mat_q7_vec_q15_opt.c.obj
+[895/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q15_opt.c.obj
+[896/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7_opt.c.obj
+[897/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_q7.c.obj
+[898/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s16.c.obj
+[899/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/FullyConnectedFunctions/arm_fully_connected_s8.c.obj
+[900/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_padded_s8.c.obj
+[901/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_add_q7.c.obj
+[902/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_accumulate_q7_to_q15.c.obj
+[903/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_4x_s8.c.obj
+[904/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s8.c.obj
+[905/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_core_1x_s8.c.obj
+[906/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_depthwise_conv_nt_t_s16.c.obj
+[907/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q15.c.obj
+[908/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mult_q7.c.obj
+[909/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mul_kernel_s16.c.obj
+[910/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nntables.c.obj
+[911/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_no_shift.c.obj
+[912/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_svdf_s8.c.obj
+[913/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s8.c.obj
+[914/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_no_shift.c.obj
+[915/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_vec_mat_mult_t_s16.c.obj
+[916/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_reordered_with_offset.c.obj
+[917/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_q7_to_q15_with_offset.c.obj
+[918/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s16.c.obj
+[919/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/ReshapeFunctions/arm_reshape_s8.c.obj
+[920/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/PoolingFunctions/arm_avgpool_s8.c.obj
+[921/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/NNSupportFunctions/arm_nn_mat_mult_nt_t_s8.c.obj
+[922/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s8.c.obj
+[923/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/PoolingFunctions/arm_max_pool_s16.c.obj
+[924/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SVDFunctions/arm_svdf_s8.c.obj
+[925/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/activation_functions/esp_nn_relu_ansi.c.obj
+[926/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8_s16.c.obj
+[927/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/basic_math/esp_nn_add_ansi.c.obj
+[928/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s8.c.obj
+[929/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q7.c.obj
+[930/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/PoolingFunctions/arm_pool_q7_HWC.c.obj
+[931/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_q15.c.obj
+[932/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SVDFunctions/arm_svdf_state_s16_s8.c.obj
+[933/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_esp32p4.c.obj
+[934/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/basic_math/esp_nn_mul_ansi.c.obj
+[935/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_ansi.c.obj
+[936/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_esp32s3.c.obj
+[937/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_s16.c.obj
+[938/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_opt.c.obj
+[939/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_with_batch_q7.c.obj
+[940/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/fully_connected/esp_nn_fully_connected_ansi.c.obj
+[941/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_ansi.c.obj
+[942/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_opt.c.obj
+[943/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s8_esp32s3.c.obj
+[944/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/softmax/esp_nn_softmax_ansi.c.obj
+[945/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_fc32_ansi.c.obj
+[946/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/pooling/esp_nn_avg_pool_ansi.c.obj
+[947/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_bitrev_tables_fc32.c.obj
+[948/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/pooling/esp_nn_max_pool_ansi.c.obj
+[949/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/fixed/dsps_fft2r_sc16_ansi.c.obj
+[950/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_fc32_ae32.c.obj
+[951/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/softmax/esp_nn_softmax_opt.c.obj
+[952/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ethos-core-driver/src/ethosu_driver.c.obj
+[953/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ethos-core-driver/src/ethosu_device_u85.c.obj
+[954/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ethos-core-driver/src/ethosu_pmu.c.obj
+[955/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/ethos-core-driver/src/ethosu_device_u55_u65.c.obj
+[956/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/activation_functions/esp_nn_relu_s8_esp32s3.S.obj
+[957/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/tensorflow/lite/c/common.c.obj
+[958/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/basic_math/esp_nn_add_s8_esp32s3.S.obj
+[959/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/common/esp_nn_common_functions_esp32s3.S.obj
+[960/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/himax-we2/ethosu_driver.c.obj
+[961/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/basic_math/esp_nn_mul_s8_esp32s3.S.obj
+[962/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/common/esp_nn_multiply_by_quantized_mult_esp32s3.S.obj
+[963/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_s8_mult8_1x1_esp32s3.S.obj
+[964/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_s8_filter_aligned_input_padded_esp32s3.S.obj
+[965/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/common/esp_nn_multiply_by_quantized_mult_ver1_esp32s3.S.obj
+[966/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_s16_mult4_1x1_esp32s3.S.obj
+[967/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_conv_s16_mult8_esp32s3.S.obj
+[968/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult1_3x3_no_pad_esp32s3.S.obj
+[969/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult1_3x3_esp32s3.S.obj
+[970/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult1_esp32s3.S.obj
+[971/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult4_esp32s3.S.obj
+[972/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s8_mult1_3x3_padded_esp32s3.S.obj
+[973/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult8_esp32s3.S.obj
+[974/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/convolution/esp_nn_depthwise_conv_s16_mult8_3x3_esp32s3.S.obj
+[975/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/fully_connected/esp_nn_fully_connected_s8_esp32s3.S.obj
+[976/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_nn_softmax_common_s8.c.obj
+[977/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/pooling/esp_nn_avg_pool_s8_esp32s3.S.obj
+[978/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/ESP-NN/src/pooling/esp_nn_max_pool_s8_esp32s3.S.obj
+[979/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/fixed/dsps_fft2r_sc16_ae32.S.obj
+[980/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_fc32_ae32_.S.obj
+[981/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/fixed/dsps_fft2r_sc16_aes3.S.obj
+[982/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/fixed/dsps_fft2r_sc16_arp4.S.obj
+[983/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_bit_rev_lookup_fc32_aes3.S.obj
+[984/1086] Building C object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/CMSIS/NN/Source/SoftmaxFunctions/arm_softmax_u8.c.obj
+[985/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_fc32_aes3_.S.obj
+[986/1086] Building ASM object main/CMakeFiles/pico_emb.dir/__/ei-model/edge-impulse-sdk/porting/espressif/esp-dsp/modules/fft/float/dsps_fft2r_fc32_arp4.S.obj
+[987/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_common/common.c.obj
+[988/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2350/pico_platform/platform.c.obj
+[989/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/portasm.c.obj
+[990/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_async_context/async_context_base.c.obj
+[991/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/croutine.c.obj
+[992/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/portable/MemMang/heap_4.c.obj
+[993/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_platform_panic/panic.c.obj
+[994/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/hardware_claim/claim.c.obj
+[995/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/list.c.obj
+[996/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c.obj
+C:/insper/compem/26a-emb-aps-2-geofs/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c: In function 'vPortValidateInterruptPriority':
+C:/insper/compem/26a-emb-aps-2-geofs/FreeRTOS-Kernel/portable/ThirdParty/GCC/RP2350_ARM_NTZ/non_secure/port.c:2323:17: warning: variable 'ucCurrentPriority' set but not used [-Wunused-but-set-variable]
+ 2323 |         uint8_t ucCurrentPriority;
+      |                 ^~~~~~~~~~~~~~~~~
+[997/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync/sync.c.obj
+[998/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/event_groups.c.obj
+[999/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+[1000/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.obj
+[1001/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_async_context/async_context_freertos.c.obj
+[1002/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/stream_buffer.c.obj
+[1003/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/timers.c.obj
+[1004/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/lock_core.c.obj
+[1005/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_clocks/clocks.c.obj
+[1006/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/critical_section.c.obj
+[1007/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/sem.c.obj
+[1008/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_sync/mutex.c.obj
+[1009/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_time/timeout_helper.c.obj
+[1010/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/queue.c.obj
+[1011/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_irq/irq.c.obj
+[1012/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_gpio/gpio.c.obj
+[1013/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/datetime.c.obj
+[1014/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_vreg/vreg.c.obj
+[1015/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom_lock.c.obj
+[1016/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pll/pll.c.obj
+[1017/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_ticks/ticks.c.obj
+[1018/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/queue.c.obj
+[1019/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_timer/timer.c.obj
+[1020/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_watchdog/watchdog.c.obj
+[1021/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_boot_lock/boot_lock.c.obj
+[1022/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xosc/xosc.c.obj
+[1023/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_util/pheap.c.obj
+[1024/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_flash/flash.c.obj
+[1025/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bootrom/bootrom.c.obj
+[1026/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_exception/exception.c.obj
+[1027/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_divider/divider.c.obj
+[1028/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+[1029/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdlib/stdlib.c.obj
+[1030/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime/runtime.c.obj
+[1031/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_fma_dcp.S.obj
+[1032/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_uart/uart.c.obj
+[1033/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/common/pico_time/time.c.obj
+[1034/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_sci_m33.S.obj
+[1035/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_aeabi_dcp.S.obj
+[1036/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.obj
+[1037/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_conv_m33.S.obj
+[1038/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.obj
+[1039/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_multicore/multicore.c.obj
+[1040/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_conv32_vfp.S.obj
+[1041/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_runtime_init/runtime_init.c.obj
+[1042/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_common_m33.S.obj
+[1043/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_divider/divider_compiler.c.obj
+[1044/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_sci_m33_vfp.S.obj
+[1045/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.obj
+[1046/1086] Building ASM object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_crt0/crt0.S.obj
+[1047/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_malloc/malloc.c.obj
+[1048/1086] Building CXX object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_cxx_options/new_delete.cpp.obj
+[1049/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_atomic/atomic.c.obj
+[1050/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_xip_cache/xip_cache.c.obj
+[1051/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_clib_interface/newlib_interface.c.obj
+[1052/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_unique_id/unique_id.c.obj
+[1053/1086] Building C object main/CMakeFiles/pico_emb.dir/__/FreeRTOS-Kernel/tasks.c.obj
+[1054/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/audio/audio_device.c.obj
+[1055/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio/stdio.c.obj
+[1056/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_flash/flash.c.obj
+[1057/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+[1058/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+[1059/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_float/float_math.c.obj
+[1060/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_double/double_math.c.obj
+[1061/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+[1062/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+[1063/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+[1064/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd_control.c.obj
+[1065/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+[1066/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/hid/hid_device.c.obj
+[1067/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/msc/msc_device.c.obj
+[1068/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/midi/midi_device.c.obj
+[1069/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+[1070/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/net/ncm_device.c.obj
+[1071/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+[1072/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_printf/printf.c.obj
+[1073/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+[1074/1086] Building CXX object main/CMakeFiles/pico_emb.dir/__/ei-model/tflite-model/tflite_learn_1027294_3_compiled.cpp.obj
+[1075/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/video/video_device.c.obj
+[1076/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+[1077/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+[1078/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/device/usbd.c.obj
+[1079/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_adc/adc.c.obj
+[1080/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+[1081/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_dma/dma.c.obj
+[1082/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_i2c/i2c.c.obj
+[1083/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/tusb.c.obj
+[1084/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/lib/tinyusb/src/common/tusb_fifo.c.obj
+[1085/1086] Building C object main/CMakeFiles/pico_emb.dir/C_/Users/marce/.pico-sdk/sdk/2.2.0/src/rp2_common/hardware_pio/pio.c.obj
+[1086/1086] Linking CXX executable pico_emb.elf

@@ -9,12 +9,20 @@ include(FreeRTOS_Kernel_import.cmake)
 # Opcoes do build:
 #   -DHAS_EI_MODEL=ON      compila o classificador Edge Impulse (precisa ei-model/)
 #   -DEI_DATA_FORWARDER=ON build de coleta p/ o edge-impulse data-forwarder
-option(HAS_EI_MODEL "Compilar com o modelo Edge Impulse (ei-model/)" OFF)
+# HAS_EI_MODEL liga sozinho se a pasta ei-model/ existir (assim o "Run" do
+# VS Code ja grava a versao com IA, sem precisar passar a flag na mao).
+if(EXISTS ${CMAKE_CURRENT_LIST_DIR}/../ei-model/edge-impulse-sdk)
+    set(_ei_default ON)
+else()
+    set(_ei_default OFF)
+endif()
+option(HAS_EI_MODEL "Compilar com o modelo Edge Impulse (ei-model/)" ${_ei_default})
 option(EI_DATA_FORWARDER "Build de coleta de dados (data-forwarder)" OFF)
 
 add_executable(pico_emb
     main.c
     gesture.cpp
+    lcd_i2c.c
     )
 
 target_include_directories(pico_emb PRIVATE
@@ -29,7 +37,6 @@ target_link_libraries(pico_emb PRIVATE
     hardware_adc
     hardware_i2c
     hardware_pwm
-    ssd1306_lib
     )
 
 # Protocolo binario do controle pela serial USB (CDC). Sem stdio UART para

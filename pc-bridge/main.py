@@ -66,12 +66,10 @@ KEYMAP = {
     # BTN_JOY tratado a parte (pausa o controle do mouse)
 }
 
-# Gestos (fase 2, Edge Impulse via HC-SR04) -> acoes
-GEST_IDLE, GEST_SWIPE_UP, GEST_SWIPE_DOWN, GEST_HOVER = 0, 1, 2, 3
+# Gestos (Edge Impulse via HC-SR04) -> acoes. Modelo de 2 classes: idle/hover.
+GEST_IDLE, GEST_HOVER = 0, 3
 GESTUREMAP = {
-    GEST_SWIPE_UP: ("key", "s"),     # spoiler/airbrake (ajustar p/ aeronave)
-    GEST_SWIPE_DOWN: ("key", "s"),
-    GEST_HOVER: ("key", "a"),        # autopilot
+    GEST_HOVER: ("key", "a"),  # mao sobre o sensor -> autopilot (ajuste a tecla)
 }
 
 # Faixa do joystick: deflexao maxima em fracao da tela (a partir do centro).

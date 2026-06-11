@@ -28,13 +28,14 @@ void gesture_init(void)
     /* run_classifier_init() nao e obrigatorio nas versoes recentes do SDK. */
 }
 
-/* Mapeia o rotulo textual do modelo para o id usado no protocolo. */
+/* Mapeia o rotulo textual do modelo para o id usado no protocolo.
+ * Modelo com 2 classes: "idle" e "hover". */
 static int label_to_id(const char *label)
 {
-    if (strcmp(label, "swipe_up") == 0)   return GEST_SWIPE_UP;
-    if (strcmp(label, "swipe_down") == 0) return GEST_SWIPE_DOWN;
-    if (strcmp(label, "hover") == 0)      return GEST_HOVER;
-    return GEST_IDLE;
+    if (strcmp(label, "hover") == 0) {
+        return GEST_HOVER;
+    }
+    return GEST_IDLE; /* "idle" e qualquer outro rotulo */
 }
 
 int gesture_classify(const float *window, size_t n, char *label_out, size_t cap)

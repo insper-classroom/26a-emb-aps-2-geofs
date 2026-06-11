@@ -136,14 +136,15 @@ O classificador roda no Pico ([main/gesture.cpp](main/gesture.cpp), API C em
 [main/gesture.h](main/gesture.h)). Enquanto não há modelo treinado, um **stub** retorna `idle` e
 **tudo continua compilando**. Para treinar e ativar o modelo real:
 
-1. **Coletar dados** — compile no modo data-forwarder e use o
+1. **Coletar dados** — não precisa de build especial: grave o firmware normal (botão **Run**)
+   e **entre no modo coleta segurando o botão GEAR ao ligar/plugar o Pico**. Nesse modo só a task
+   do HC-SR04 roda, imprimindo a distância na serial USB. Então rode o
    [edge-impulse data-forwarder](https://docs.edgeimpulse.com/docs/cli-data-forwarder):
    ```bash
-   cmake -S . -B build -G Ninja -DPICO_BOARD=pico2 -DEI_DATA_FORWARDER=ON
-   # grave o .uf2, depois:
-   edge-impulse-data-forwarder   # le a distancia do HC-SR04 pela serial
+   edge-impulse-data-forwarder   # le a distancia do HC-SR04 pela COM USB do Pico
    ```
-   Rotule os gestos (`idle`, `swipe_up`, `swipe_down`, `hover`).
+   Rotule os gestos (`idle`, `swipe_up`, `swipe_down`, `hover`). Para voltar ao jogo, é só
+   religar **sem** segurar o GEAR. (Build dedicado opcional: `-DEI_DATA_FORWARDER=ON`.)
 2. **Treinar e exportar** no Edge Impulse Studio → **Deployment → C++ library**.
 3. **Vendorizar** o pacote exportado em `ei-model/` (contém `edge-impulse-sdk/`, `tflite-model/`,
    `model-parameters/`). Ajuste `GESTURE_WINDOW` em [main/main.c](main/main.c) para casar com

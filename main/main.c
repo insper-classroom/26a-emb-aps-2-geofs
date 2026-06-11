@@ -20,6 +20,7 @@
 #include <semphr.h>
 #include <task.h>
 
+#include <stdint.h>
 #include <stdio.h>
 
 #include "hardware/adc.h"
@@ -30,8 +31,8 @@
 #include "pico/stdlib.h"
 
 #include "gesture.h"
+#include "lcd_i2c.h"
 #include "pins.h"
-#include "ssd1306.h"
 
 /* Build de coleta de dados p/ o edge-impulse data-forwarder (default: off) */
 #ifndef EI_DATA_FORWARDER
@@ -65,8 +66,8 @@
 #define HEARTBEAT_TIMEOUT_MS 1500
 
 /* HC-SR04: janela de amostras p/ o classificador e alcance maximo (cm).
- * GESTURE_WINDOW deve casar com EI_CLASSIFIER_RAW_SAMPLE_COUNT do modelo. */
-#define GESTURE_WINDOW 50
+ * GESTURE_WINDOW = EI_CLASSIFIER_RAW_SAMPLE_COUNT do modelo treinado (15). */
+#define GESTURE_WINDOW 15
 #define HCSR04_MAX_CM 200.0f
 
 /* Eventos de feedback (q_event -> task_feedback) */
@@ -432,19 +433,15 @@ static void task_buttons(void *p)
 }
 
 /* Mede o HC-SR04, monta a janela e roda o classificador (Edge Impulse).
- * Rodara no core 1 (afinidade) - lab RTOS expert. */
+ * Rodara no core 1 (afinidade) - lab RTOS expert.
+ * pvParameters != 0 -> modo COLETA (data-forwarder): imprime as amostras. */
 static void task_gesture(void *p)
 {
-    (void)p;
+    int forwarder = (int)(intptr_t)p;
 
-    gpio_init(TRIG_PIN);
-    gpio_set_dir(TRIG_PIN, GPIO_OUT);
-    gpio_put(TRIG_PIN, 0);
-
-    gpio_init(ECHO_PIN);
-    gpio_set_dir(ECHO_PIN, GPIO_IN);
-    gpio_set_irq_enabled(ECHO_PIN, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true);
-
+    /* Os pinos TRIG/ECHO e a IRQ do echo sao configurados em buttons_init()
+     * (core 0), pois o callback de GPIO e por-core no RP2350. Esta task so
+     * dispara o trigger e le o resultado pela fila q_echo (segura entre cores). */
     gesture_init();
 
     float window[GESTURE_WINDOW];
@@ -467,26 +464,27 @@ static void task_gesture(void *p)
             }
         }
 
-#if EI_DATA_FORWARDER
-        /* Modo coleta: imprime amostras p/ o edge-impulse data-forwarder. */
-        printf("%.1f\n", dist);
-#else
-        window[idx++] = dist;
-        if (idx >= GESTURE_WINDOW) {
-            idx = 0;
-            char label[16];
-            int g = gesture_classify(window, GESTURE_WINDOW, label, sizeof(label));
-            if (g >= 0 && g != GEST_IDLE && g != last_gesture) {
-                last_gesture = g;
-                input_msg_t m = { .type = TYPE_GESTURE, .value = (int16_t)g };
-                xQueueSend(q_input, &m, 0);
-            } else if (g == GEST_IDLE) {
-                last_gesture = GEST_IDLE;
+        if (forwarder) {
+            /* Modo coleta: 1 amostra por linha p/ o edge-impulse data-forwarder. */
+            printf("%.1f\n", dist);
+        } else {
+            window[idx++] = dist;
+            if (idx >= GESTURE_WINDOW) {
+                idx = 0;
+                char label[16];
+                int g = gesture_classify(window, GESTURE_WINDOW, label,
+                                         sizeof(label));
+                if (g >= 0 && g != GEST_IDLE && g != last_gesture) {
+                    last_gesture = g;
+                    input_msg_t m = { .type = TYPE_GESTURE, .value = (int16_t)g };
+                    xQueueSend(q_input, &m, 0);
+                } else if (g == GEST_IDLE) {
+                    last_gesture = GEST_IDLE;
+                }
             }
         }
-#endif
 
-        vTaskDelay(pdMS_TO_TICKS(20)); /* ~50 Hz */
+        vTaskDelay(pdMS_TO_TICKS(60)); /* ~mesma taxa da coleta (modelo ~11 Hz) */
     }
 }
 
@@ -620,34 +618,34 @@ static void task_feedback(void *p)
 static const char *gesture_name(int id)
 {
     switch (id) {
-    case GEST_SWIPE_UP:   return "swipe up";
-    case GEST_SWIPE_DOWN: return "swipe down";
-    case GEST_HOVER:      return "hover";
-    default:              return "idle";
+    case GEST_HOVER: return "hover";
+    default:         return "idle";
     }
 }
 
-/* OLED SSD1306: dashboard do controle (conexao, throttle, gesto, bateria). */
+/* LCD 16x2 (HD44780 via I2C): dashboard do controle.
+ *   Linha 0: conexao + throttle + perfil
+ *   Linha 1: gesto + bateria
+ */
 static void task_display(void *p)
 {
     (void)p;
 
-    i2c_init(i2c0, 400 * 1000);
+    i2c_init(i2c0, 100 * 1000); /* LCD HD44780 e mais estavel em 100 kHz */
     gpio_set_function(I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(I2C_SCL_PIN, GPIO_FUNC_I2C);
     gpio_pull_up(I2C_SDA_PIN);
     gpio_pull_up(I2C_SCL_PIN);
 
-    ssd1306_t disp;
-    disp.external_vcc = false;
-    ssd1306_init(&disp, 128, 64, 0x3C, i2c0);
+    uint8_t lcd_addr = lcd_init(i2c0, 0); /* autodetecta 0x27/0x3F */
 
     uint8_t conn = CONN_DISCONNECTED;
     int throttle = 0;
     int batt = 0;
     int gesture = GEST_IDLE;
     int profile = DEFAULT_PROFILE;
-    char buf[24];
+    char tmp[24];
+    char line[17];
 
     for (;;) {
         disp_msg_t d;
@@ -662,30 +660,26 @@ static void task_display(void *p)
             }
         }
 
-        xSemaphoreTake(mtx_i2c, portMAX_DELAY);
-        ssd1306_clear(&disp);
-        snprintf(buf, sizeof(buf), "GeoFS [%s]",
-                 PROFILES[profile < NUM_PROFILES ? profile : 0].name);
-        ssd1306_draw_string(&disp, 0, 0, 1, buf);
-        ssd1306_draw_string(&disp, 0, 12, 1,
-                            conn == CONN_CONNECTED ? "PC: conectado"
-                                                   : "PC: ---");
-
-        snprintf(buf, sizeof(buf), "Throttle: %3d%%", throttle);
-        ssd1306_draw_string(&disp, 0, 24, 1, buf);
-        /* barra de throttle */
-        int bar = throttle * 120 / 100;
-        ssd1306_draw_empty_square(&disp, 0, 34, 124, 6);
-        if (bar > 0) {
-            ssd1306_draw_square(&disp, 2, 36, (uint32_t)(bar > 120 ? 120 : bar), 2);
+        if (!lcd_addr) {
+            continue; /* nenhum LCD detectado: nao bloqueia o resto */
         }
 
-        snprintf(buf, sizeof(buf), "Gesto: %s", gesture_name(gesture));
-        ssd1306_draw_string(&disp, 0, 44, 1, buf);
-        snprintf(buf, sizeof(buf), "Bateria: %3d%%", batt);
-        ssd1306_draw_string(&disp, 0, 54, 1, buf);
+        xSemaphoreTake(mtx_i2c, portMAX_DELAY);
 
-        ssd1306_show(&disp);
+        /* Linha 0: "PC T:100% Sport" (conexao, throttle, perfil) */
+        snprintf(tmp, sizeof(tmp), "%s T:%3d%% %s",
+                 conn == CONN_CONNECTED ? "PC" : "--", throttle,
+                 PROFILES[profile < NUM_PROFILES ? profile : 0].name);
+        snprintf(line, sizeof(line), "%-16s", tmp);
+        lcd_set_cursor(0, 0);
+        lcd_print(line);
+
+        /* Linha 1: "hover     Bat:87%" (gesto, bateria) */
+        snprintf(tmp, sizeof(tmp), "%-7s Bat:%3d%%", gesture_name(gesture), batt);
+        snprintf(line, sizeof(line), "%-16s", tmp);
+        lcd_set_cursor(0, 1);
+        lcd_print(line);
+
         xSemaphoreGive(mtx_i2c);
     }
 }
@@ -714,7 +708,8 @@ static void task_status_led(void *p)
  * Setup de hardware e main
  * ========================================================================= */
 
-/* Configura botoes como entrada com pull-up e habilita IRQ por borda. */
+/* Configura botoes (entrada + pull-up) e o HC-SR04, habilitando todas as IRQs
+ * de GPIO no MESMO core (o callback de GPIO e por-core no RP2350). */
 static void buttons_init(void)
 {
     const uint pins[] = { BTN_GEAR_PIN, BTN_FLAPS_PIN, BTN_BRAKE_PIN,
@@ -724,16 +719,26 @@ static void buttons_init(void)
         gpio_set_dir(pins[i], GPIO_IN);
         gpio_pull_up(pins[i]);
     }
-    /* Registra o callback unico no primeiro pino... */
+
+    /* HC-SR04: TRIG (saida) e ECHO (entrada). */
+    gpio_init(TRIG_PIN);
+    gpio_set_dir(TRIG_PIN, GPIO_OUT);
+    gpio_put(TRIG_PIN, 0);
+    gpio_init(ECHO_PIN);
+    gpio_set_dir(ECHO_PIN, GPIO_IN);
+
+    /* Registra o callback unico (neste core) no primeiro pino... */
     gpio_set_irq_enabled_with_callback(pins[0], GPIO_IRQ_EDGE_FALL, true,
                                        &gpio_callback);
-    /* ...e habilita os demais pinos no mesmo callback. */
+    /* ...e habilita os demais botoes no mesmo callback. */
     for (int i = 1; i < 5; i++) {
         gpio_set_irq_enabled(pins[i], GPIO_IRQ_EDGE_FALL, true);
     }
     /* Botao do joystick tambem detecta a borda de subida (soltar) para
      * distinguir clique curto x longo (macro). */
     gpio_set_irq_enabled(BTN_JOY_PIN, GPIO_IRQ_EDGE_RISE, true);
+    /* Echo do HC-SR04: ambas as bordas, no mesmo core do callback. */
+    gpio_set_irq_enabled(ECHO_PIN, GPIO_IRQ_EDGE_RISE | GPIO_IRQ_EDGE_FALL, true);
 }
 
 int main(void)
@@ -761,19 +766,28 @@ int main(void)
 
     buttons_init();
 
+    /* Modo COLETA (data-forwarder) selecionado em runtime: segure o botao GEAR
+     * ao ligar/plugar o Pico. Assim o MESMO firmware (o que o "Run" grava) serve
+     * para jogar OU para coletar dados da IA, sem precisar de build especial.
+     * Tambem pode ser forcado em build com -DEI_DATA_FORWARDER=ON. */
+    sleep_ms(10); /* deixa o pull-up estabilizar antes de ler */
+    int forwarder = (gpio_get(BTN_GEAR_PIN) == 0) || (EI_DATA_FORWARDER != 0);
+
     TaskHandle_t h_analog = NULL, h_buttons = NULL, h_comm = NULL;
     TaskHandle_t h_led = NULL, h_gesture = NULL, h_feedback = NULL;
     TaskHandle_t h_display = NULL;
 
-    xTaskCreate(task_gesture, "gesture", 1024, NULL, 2, &h_gesture);
-#if !EI_DATA_FORWARDER
-    xTaskCreate(task_analog, "analog", 512, NULL, 2, &h_analog);
-    xTaskCreate(task_buttons, "buttons", 512, NULL, 3, &h_buttons);
-    xTaskCreate(task_comm, "comm", 512, NULL, 2, &h_comm);
-    xTaskCreate(task_status_led, "led", 256, NULL, 1, &h_led);
-    xTaskCreate(task_feedback, "feedback", 512, NULL, 2, &h_feedback);
-    xTaskCreate(task_display, "display", 1024, NULL, 1, &h_display);
-#endif
+    /* Pilha grande: o run_classifier (Edge Impulse) usa bastante stack. */
+    xTaskCreate(task_gesture, "gesture", 8192, (void *)(intptr_t)forwarder, 2,
+                &h_gesture);
+    if (!forwarder) {
+        xTaskCreate(task_analog, "analog", 512, NULL, 2, &h_analog);
+        xTaskCreate(task_buttons, "buttons", 512, NULL, 3, &h_buttons);
+        xTaskCreate(task_comm, "comm", 512, NULL, 2, &h_comm);
+        xTaskCreate(task_status_led, "led", 256, NULL, 1, &h_led);
+        xTaskCreate(task_feedback, "feedback", 512, NULL, 2, &h_feedback);
+        xTaskCreate(task_display, "display", 1024, NULL, 1, &h_display);
+    }
 
 #if (configNUMBER_OF_CORES > 1)
     /* Lab RTOS expert: a IA (DSP + classificador) fica isolada no core 1;
